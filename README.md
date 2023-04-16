@@ -3,18 +3,17 @@ This is a repository for a C++ OpenGL application I made for my CS 3388 Computer
 
 ## Assignment 5 Header
 
-Author
-    Ryan Hecht
-Professor
-    Alex Brandt
-Course
-    CS 3388 Computer Graphics I
-Due Date
-    10 April 2023
-Creation Date
-    17 March 2023
-Last Edited
-    25 March 2023
+Ryan Hecht
+
+Professor Brandt
+
+CS 3388 Computer Graphics I
+
+Due Date: 10 April 2023
+
+Created: 17 March 2023
+
+Last Edited: 25 March 2023
 
 ## Description
 
