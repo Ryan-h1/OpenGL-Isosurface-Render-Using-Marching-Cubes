@@ -1,17 +1,22 @@
 # OpenGL-Isosurface-Render-Using-Marching-Cubes
 This is a repository for a C++ OpenGL application I made for my CS 3388 Computer Graphics I class at Western University.
 
-# Assignment 5 Header
+## Assignment 5 Header
 
-Ryan Hecht
-Professor Brandt
-CS 3388 Computer Graphics I
-Due Date: 10 April 2023
+### Author
+    Ryan Hecht
+### Professor
+    Alex Brandt
+### Course
+    CS 3388 Computer Graphics I
+### Due Date
+    10 April 2023
+### Creation Date
+    17 March 2023
+### Last Edited
+    25 March 2023
 
-Created: 17 March 2023
-Last Edited: 25 March 2023
-
-# Description
+## Description
 
     This program is a C++ openGL application that renders an isosurface using the marching cubes 
     algorithm. It takes command line arguments for screen width, screen height, step size, 
@@ -23,7 +28,7 @@ Last Edited: 25 March 2023
     in the window with user interaction for camera control. The program handles cleanup and 
     termination upon completion.
 
-# Program Structure
+## Program Structure
 
 ### "ExampleScreenshots" Folder
     Contains screenshots of the first three scalar functions
@@ -47,7 +52,7 @@ Last Edited: 25 March 2023
     WorldBoundaries.hpp: Class definition for the world boundaries and axes
     Running the Program:
 
-# How to Run the Program
+## How to Run the Program
 
     Compile the program using the provided makefile (if using Ubuntu 22.04.2) with the 
     appropriate libraries on your system. Use your own form of compilation if using an
@@ -61,7 +66,7 @@ Last Edited: 25 March 2023
     coordinate boundaries of (-5, -5, -5) to (5, 5, 5) with an iso value of 1.0 and the 
     first of eight generating functions selected.
 
-# A Note on Compatibility
+## A Note on Compatibility
 
     This file uses the standard dev tools from the OpenGL library. It also uses GLEW and GLM. Even if you have the standard
     OpenGL dev tools downloaded, you must still download GLEW and GLM to your machine seperately. This program was
@@ -69,18 +74,18 @@ Last Edited: 25 March 2023
     operating systems and hardware, particularly Apple Silicone and Intel GPUs. There may also be compatibility issues with
     high retina displays.
 
-# Additional Notes
+## Additional Notes
 
     Please note that small stepsizes use A LOT of memory. If you are getting memory issues, please
     try using the default stepsize of 0.1.
 
-# Acknowledgments
+## Acknowledgments
     
     This program was completed as an assignment for CS 3388 Computer Graphics I at 
     Western University and uses some files provided by Professor Alexandar Brandt, such
     as shader.hpp.
 
-# Example Screenshots
+## Example Screenshots
 ![Alt text](/ExampleScreenshots/scalar1.png?raw=true "Scalar Function 1")
 
 ![Alt text](/ExampleScreenshots/scalar2.png?raw=true "Scalar Function 2")
