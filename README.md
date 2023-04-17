@@ -27,6 +27,15 @@ Last Edited: 25 March 2023
     in the window with user interaction for camera control. The program handles cleanup and 
     termination upon completion.
 
+## Requirements
+
+    1. C++ Standard Library
+    2. OpenGL
+    3. GLEW (OpenGL Extension Wrangler Library)
+    4. GLFW (OpenGL Graphics Library Framework)
+    5. GLM (OpenGL Mathematics)
+    6. Support for GLSL 3.30.
+
 ## Program Structure
 
 ### "ExampleScreenshots" Folder
