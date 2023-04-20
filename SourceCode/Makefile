@@ -2,10 +2,29 @@ CC = g++
 CFLAGS = -lglfw -lGLEW -lOpenGL
 TARGET = assign5
 
+# List all the source files
+SRCS = main.cpp
+
+# List all the header files
+HDRS = headers.hpp Constants.hpp HelperFunctions.hpp shader.hpp UserConstants.hpp TriTable.hpp Worldboundaries.hpp
+
+# Set the obj directory path
+OBJ_DIR = ObjectFiles
+
+# Generate a list of object files from the source files
+OBJS = $(patsubst %.cpp,$(OBJ_DIR)/%.o,$(SRCS))
+
 all: $(TARGET)
 
-$(TARGET): main.cpp
-	$(CC) main.cpp $(CFLAGS) -o $(TARGET)
+$(TARGET): $(OBJS)
+	$(CC) $(OBJS) $(CFLAGS) -o $(TARGET)
 
+# Compile each source file into an object file
+$(OBJ_DIR)/%.o: %.cpp $(HDRS)
+	mkdir -p $(OBJ_DIR)
+	$(CC) -c $(CFLAGS) $< -o $@
+
+.PHONY: clean
 clean:
-	rm -f $(TARGET)
+	rm -rf $(TARGET) $(OBJ_DIR)
+
