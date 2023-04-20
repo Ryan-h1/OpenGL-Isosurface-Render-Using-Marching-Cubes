@@ -108,20 +108,20 @@ bool marching_cubes_async(std::vector<float>& vertices, std::vector<float>& norm
 	int* verts;
 
 	for ( ; x < maxx; x += stepsize) {
-        for (float y = miny; y < maxy; y += stepsize) {
+        for (y = miny; y < maxy; y += stepsize) {
             float ystep = y + stepsize;
-            for (float z = minz; z < maxz; z += stepsize) {
+            for (z = minz; z < maxz; z += stepsize) {
                 float zstep = z + stepsize;
 
                 // Test the cube
-                float ntl = (*f)(x, ystep, zstep);
-                float ntr = (*f)(x + stepsize, ystep, zstep);
-                float nbr = (*f)(x + stepsize, y, zstep);
-                float nbl = (*f)(x, y, zstep);
-                float ftl = (*f)(x, ystep, z);
-                float ftr = (*f)(x + stepsize, ystep, z);
-                float fbr = (*f)(x + stepsize, y, z);
-                float fbl = (*f)(x, y, z);
+                ntl = (*f)(x, ystep, zstep);
+                ntr = (*f)(x + stepsize, ystep, zstep);
+                nbr = (*f)(x + stepsize, y, zstep);
+                nbl = (*f)(x, y, zstep);
+                ftl = (*f)(x, ystep, z);
+                ftr = (*f)(x + stepsize, ystep, z);
+                fbr = (*f)(x + stepsize, y, z);
+                fbl = (*f)(x, y, z);
 
 				which = 0;
 
